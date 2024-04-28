@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 10;
+  padding: 0;
+}
+/* <mainhader> */
+.Mainheader {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.Head {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: rgb(38, 5, 160);
+  border-radius: 10px;
+}
+.Head h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+/* <searchbox> */
+.Searchbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.Searchbox input[type="text"] {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+/* <addtransaction> */
+.table-add {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  box-sizing: border-box;
+
+}
+.table-add input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.addtransaction-button{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgb(184, 184, 184);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 10%;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+/* <table display> */
+.TransactionList {
+  width: 100%;
+  border-collapse: collapse;
+}
+.TransactionList th {
+  background-color: #fefcff;
+  color: #000000;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.TransactionList td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.TransactionList h3 {
+  margin: 0;
+  font-size: 16px;
+}
+.TransactionList tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+
+
+
+
