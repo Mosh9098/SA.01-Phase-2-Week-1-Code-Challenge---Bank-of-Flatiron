@@ -8,6 +8,18 @@ function AccountContainer() {
   const [transactionsData, setTransactionsData] = useState(transactions);
   const [query, setQuery] = useState("");
 
+   function fetchTransactions() {
+    try {
+      const response =  fetch("data.js");
+      const data =  response.json();
+      setTransactionsData(data);
+    } catch (error) {
+      console.error("Error fetching transactions:", error);
+    }
+  }
+  
+  fetchTransactions();
+  
   function handleSearch(e) {
     setQuery(e.target.value);
   }
